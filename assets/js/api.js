@@ -1,13 +1,16 @@
 const Dice = document.getElementById('dice')
 
 
-function callApi() {
+function generateAdvice() {
     fetch('https://api.adviceslip.com/advice')
         .then( response => {
         return response.json();
-        }).then( json => {
-        console.log(json)
+        }).then( data => {
+        console.log(data)
+
+        document.getElementById('advicenum').innerHTML = 'Advice #' + data.slip.id
+        document.getElementById('advicetext').innerHTML = data.slip.advice
     })
 }
 
-Dice.addEventListener("click", callApi)
+Dice.addEventListener("click", generateAdvice)
