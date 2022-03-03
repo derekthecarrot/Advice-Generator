@@ -23,6 +23,7 @@ body {
     color: var(--cyan);
     text-align: center;
 }
+
 @media screen and (min-width: 1440px) {
 
 }
