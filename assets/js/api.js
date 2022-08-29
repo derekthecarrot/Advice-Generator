@@ -9,8 +9,10 @@ function generateAdvice() {
         console.log(data)
 
         document.getElementById('advicenum').innerHTML = 'Advice #' + data.slip.id
-        document.getElementById('advicetext').innerHTML = data.slip.advice
+        document.getElementById('advicetext').innerHTML = data.slip.advice 
     })
 }
+
+generateAdvice();
 
 Dice.addEventListener("click", generateAdvice)

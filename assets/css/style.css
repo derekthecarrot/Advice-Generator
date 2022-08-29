@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+
 :root {
     --cyan: hsl(193, 38%, 86%);
     --neon: hsl(150, 100%, 66%);
@@ -6,12 +9,22 @@
     --darkblue: hsl(218, 23%, 16%);
 }
 
+html {
+    height: 100%;
+}
 body {
     background-color: var(--darkblue);
 }
+.main {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+
+}
+
 .section {
     background-color: var(--darkgrayblue);
-    align-content: center;
+   
 }
 
 .advice-number {
@@ -22,8 +35,23 @@ body {
 .advice {
     color: var(--cyan);
     text-align: center;
+    font-family: Manrope;
+    font-size: 24px;
 }
 
+.center-button {
+    width: 0;
+    margin: auto;
+}
+
+#dice {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--neon);
+    border: none;
+    border-radius: 50%;
+    
+}
 @media screen and (min-width: 1440px) {
 
 }
